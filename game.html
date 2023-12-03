@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lets Play!!!</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body class="body">
+    <header class="title-bar">
+      <div class="tit">
+        <h2>Rock, Scissors, Paper</h2>
+        <p>First to 15 is the Champion!!!</p>
+      </div>
+    </header>
+
+    <div class="score-counter">
+      <div class="score score_player">0</div>
+      <h3 class="flex-right score-owner">You</h3>
+      <h3 class="score-owner">computer</h3>
+      <div class="score score_computer">0</div>
+    </div>
+
+    <div class="game-body">
+      <h4>Rock, Scissors or Paper?</h4>
+      <div id="buttons">
+        <button class="rock" onclick="Rock()">Rock</button>
+        <button class="scissors" onclick="Scissors()">Scissors</button>
+        <button class="paper" onclick="Paper()">Paper</button>
+      </div>
+    </div>
+
+    <div class="played">
+      <div id="player_played">You Choose?</div>
+      <div id="computer_played">Computer Choose...</div>
+    </div>
+    <h2 class="winner"></h2>
+    <div class="track-cover">
+      <table id="myTable">
+        <thead>
+          <td>No of plays</td>
+          <td>Your Choice</td>
+          <td>Computer choice</td>
+          <td>Winner</td>
+        </thead>
+
+        <tbody>
+          <tr class="tr-count"></tr>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

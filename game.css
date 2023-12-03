@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  transition: all 1s ease-out;
+}
+body {
+  background-color: #292929;
+}
+.title-bar {
+  padding: 20px;
+  background-image: url(./images/RPS\ img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45vh;
+}
+.tit {
+  color: wheat;
+  text-align: center;
+}
+.score-counter {
+  display: flex;
+  align-items: center;
+  color: wheat;
+  font-weight: 600;
+}
+.score-owner {
+  margin: 10px;
+}
+.flex-right {
+  margin-right: auto;
+}
+div > h4 {
+  color: wheat;
+}
+.score {
+  font-weight: 600;
+  background-color: #111113;
+  font-size: 25px;
+  border: 3px solid #111113;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.game-body {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+}
+button:hover {
+  transform: scale(1.3);
+  transition: 200ms ease;
+}
+button.rock {
+  background-color: #fb57c6;
+}
+button.paper {
+  background-color: #40a4f7;
+  color: black;
+}
+button.scissors {
+  background-color: #ffff75;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.played {
+  text-align: center;
+  color: wheat;
+  margin-bottom: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.winner {
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+table {
+  text-align: center;
+  width: 100%;
+  color: wheat;
+  font-size: 12px;
+}
+thead {
+  font-weight: 600;
+}
+td {
+  padding: 5px;
+  border: 0.5px solid white;
+}
+@media only screen and (min-width: 300px) and (max-width: 360px) {
+  .title-bar {
+    height: 30vh;
+  }
+  .tit {
+    font-size: small;
+  }
+  .score-counter {
+    font-size: small;
+  }
+  .score {
+    font-size: 20px;
+  }
+  .played,
+  .winner {
+    font-size: small;
+  }
+  button {
+    font-size: small;
+  }
+}
+@media only screen and (min-width: 370px) and (max-width: 399px) {
+  .title-bar {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .title-bar {
+    height: 45vh;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .title-bar {
+    height: 60vh;
+  }
+  .tit {
+    font-size: x-large;
+  }
+  .score-counter {
+    font-size: xx-large;
+  }
+  button.scissors {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .score {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  button {
+    font-size: xx-large;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .played,
+  .winner {
+    font-size: xx-large;
+  }
+
+  table {
+    font-size: x-large;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+  .title-bar {
+    height: 75vh;
+  }
+  .tit {
+    font-size: 33px;
+  }
+  .score-counter {
+    font-size: 30px;
+  }
+
+  .score {
+    font-size: 55px;
+  }
+  h4 {
+    font-size: 35px;
+  }
+  button {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  button.scissors {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .played,
+  .winner {
+    font-size: 32px;
+  }
+
+  table {
+    font-size: xx-large;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1500px) {
+  .title-bar {
+    height: 100vh;
+  }
+  .tit {
+    font-size: 33px;
+  }
+  .score-counter {
+    font-size: 30px;
+  }
+
+  .score {
+    font-size: 55px;
+  }
+  h4 {
+    font-size: 35px;
+  }
+  button {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  button.scissors {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .played,
+  .winner {
+    font-size: 32px;
+  }
+
+  table {
+    font-size: xx-large;
+  }
+}
